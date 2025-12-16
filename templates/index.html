@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giardino & Mare | Mobiliario de Exterior</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icon.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo"
+                        class="logo-image"></a>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#coleccion">Colección</a></li>
+                    <li><a href="#marcas">Marcas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/giardinoemare/" target="_blank">
+                        <img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram">
+                    </a>
+                    <a href="https://wa.me/59893421249" target="_blank">
+                        <img src="{{ url_for('static', filename='images/whatsapp.png') }}" alt="WhatsApp">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Amoblamientos para gente exigente</h1>
+            <p>Muebles de exterior robustos, duraderos y respetuosos con el medio ambiente. Diseños de alta gama en
+                armonía con la naturaleza.</p>
+            <a href="#coleccion" class="btn-primary">Descubrir Colección</a>
+        </div>
+    </section>
+
+    <section id="coleccion" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Diseño y Confort</h2>
+                <p>Transformamos tu jardín, terraza o patio en un oasis de confort y sofisticación.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Mobiliario de Lujo</h3>
+                    <p>Piezas únicas hechas a mano por artesanos calificados, combinando tecnología innovadora con
+                        artesanía tradicional.</p>
+                </div>
+                <div class="card">
+                    <h3>Resistencia Total</h3>
+                    <p>Materiales nobles y resistentes diseñados para soportar las condiciones del exterior sin perder
+                        su belleza.</p>
+                </div>
+                <div class="card">
+                    <h3>Proyectos Integrales</h3>
+                    <p>Soluciones completas para hoteles, resorts y residencias privadas que buscan la excelencia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="marcas" class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestras Marcas</h2>
+                <p>Representamos a las firmas más prestigiosas del diseño exterior internacional.</p>
+            </div>
+            <div class="brands-grid">
+                <div class="brand-item">
+                    <img src="{{ url_for('static', filename='images/marcas/balliu.jpg') }}" alt="Balliu">
+                </div>
+                <div class="brand-item">
+                    <img src="{{ url_for('static', filename='images/marcas/skyline.jpg') }}" alt="Sky Line Design">
+                </div>
+                <div class="brand-item">
+                    <img src="{{ url_for('static', filename='images/marcas/jardinico.jpg') }}" alt="Jardinico">
+                </div>
+                <div class="brand-item">
+                    <img src="{{ url_for('static', filename='images/marcas/ezpeleta.jpg') }}" alt="Ezpeleta">
+                </div>
+                <div class="brand-item">
+                    <img src="{{ url_for('static', filename='images/marcas/joenfa.jpg') }}" alt="Joenfa">
+                </div>
+            </div>
+            <div class="brands-info">
+                <div class="brand-info-item">
+                    <img src="{{ url_for('static', filename='images/balliu-eva-pro-arena-outdoor-furniture-mobiliario-terraza-jardin-01-1200x800-1-1024x683.png') }}"
+                        alt="Balliu" title="Balliu">
+                    <div class="brand-text">
+                        <h2>Balliu</h2>
+                        <p>En Balliu, tenemos una rica historia que abarca muchos años como fabricantes de mobiliario
+                            exterior. Nuestra andadura comenzó en 1968 cerca de la Costa Brava, impulsada por la visión
+                            de nuestros fundadores, Josep Balliu García y Carme Falgueras Ribas.</p>
+                        <a href="https://www.balliuexport.com/" target="_blank" class="brand-link">Visitar sitio web</a>
+                    </div>
+                </div>
+                <div class="brand-info-item">
+                    <img src="{{ url_for('static', filename='images/crop-0-0-900-1024-0-CUBE-1-LR-1-900x1024-1.jpg') }}"
+                        alt="Sky Line Design" title="Sky Line Design">
+                    <div class="brand-text">
+                        <h2>Sky Line Design</h2>
+                        <p>Cada pieza de nuestros lujosos muebles de ratán para exteriores está hecha a mano por
+                            artesanos altamente calificados en nuestra fábrica Skyline, lo que nos permite crear
+                            productos únicos combinando la tecnología más innovadora con la artesanía tradicional.</p>
+                        <a href="https://skylinedesign.furniture/es/" target="_blank" class="brand-link">Visitar sitio
+                            web</a>
+                    </div>
+                </div>
+                <div class="brand-info-item">
+                    <img src="{{ url_for('static', filename='images/tondo-3s.960x960.jpg') }}" alt="Jardinico"
+                        title="Jardinico">
+                    <div class="brand-text">
+                        <h2>Jardinico</h2>
+                        <p>Déjese inspirar por la vida al aire libre. Un precioso lugar donde nos reunimos, nos
+                            relajamos y creamos recuerdos para toda la vida con la familia y los amigos. Jardinico es
+                            una empresa belga que abre las puertas al exterior perfecto añadiendo piezas únicas y
+                            exclusivas a su jardín o terraza.</p>
+                        <a href="https://jardinico.com/es/" target="_blank" class="brand-link">Visitar sitio web</a>
+                    </div>
+                </div>
+                <div class="brand-info-item">
+                    <img src="{{ url_for('static', filename='images/2FHk9V0eOGinIE4SQRvT-1359x1536.jpg') }}"
+                        alt="Ezpeleta" title="Ezpeleta">
+                    <div class="brand-text">
+                        <h2>Ezpeleta</h2>
+                        <p>En Ezpeleta llevamos más de 90 años trabajando en el diseño y fabricación de muebles para
+                            proyectos de exterior. Dentro de nuestro catálogo, encontrarás todas las piezas de
+                            mobiliario que necesita para tu terraza, jardín, zona chill-out o zona de piscina: mesas,
+                            sillas, tumbonas, parasoles, separadores y mobiliario lounge.</p>
+                        <a href="https://www.ezpeleta.com/" target="_blank" class="brand-link">Visitar sitio web</a>
+                    </div>
+                </div>
+                <div class="brand-info-item">
+                    <img src="{{ url_for('static', filename='images/JOENFA-FEB_0012-scaled-1-1252x1536.jpg') }}"
+                        alt="Joenfa" title="Joenfa">
+                    <div class="brand-text">
+                        <h2>Joenfa</h2>
+                        <p>Exclusiva línea de mobiliario exterior, fabricada con materiales nobles y resistentes,
+                            diseñada para adaptarse a todos los estilos, ofreciendo creaciones únicas que transformarán
+                            tu jardín, terraza o patio en un oasis de confort y sofisticación.</p>
+                        <a href="https://joenfa.es/" target="_blank" class="brand-link">Visitar sitio web</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Visítanos</h2>
+                <p>Estamos ubicados en el Design District de Punta del Este.</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Dirección</h3>
+                    <div class="card-content">
+                        <p>Av. Roosevelt Pda 5, casi Pedragos Sierra</p>
+                        <p>Punta del Este – Uruguay</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>Contacto</h3>
+                    <div class="card-content">
+                        <p>Tel: 42 493 300</p>
+                        <p>Cel: 093 421 249</p>
+                        <p>Email: mildefoxinfo@gmail.com</p>
+                        <div class="mt-4">
+                            <a href="https://wa.me/59893421249" class="btn-primary btn-whatsapp">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.5988416362907!2d-54.93386532450719!3d-34.9415965754204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9575053b98c87429%3A0xc09ee26e96e10d7c!2sGiardino%20%26%20Mare!5e0!3m2!1ses-419!2suy!4v1764969752287!5m2!1ses-419!2suy"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Giardino & Mare. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
